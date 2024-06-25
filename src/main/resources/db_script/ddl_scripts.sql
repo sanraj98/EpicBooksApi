@@ -1,0 +1,13 @@
+-- epic_books.book definition
+
+CREATE TABLE `book` (
+  `ID` bigint NOT NULL AUTO_INCREMENT,
+  `TITLE` varchar(100) DEFAULT NULL,
+  `AUTHOR` varchar(100) DEFAULT NULL,
+  `DESCRIPTION` varchar(355) DEFAULT NULL,
+  `COPIES` int DEFAULT NULL,
+  `COPIES_AVAILABLE` int DEFAULT NULL,
+  `CATEGORY` varchar(100) DEFAULT NULL,
+  `IMG` mediumblob,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
